@@ -1,0 +1,130 @@
+#background{
+  background-image:url(Media/bodyBackImg.jpg);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+  
+.logo{
+  width: 100px;
+  border-radius: 200px;
+  border: 2px solid #2f4f4f;
+  float: left;
+  margin-left: 50px;
+}
+
+.navbar li.active a{
+  background-color: darkblue;
+  border-radius: 10px;
+  color: #FFF;
+  padding: 5px;
+}
+  
+.navbar{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: arial;
+  top: 0;
+  position: sticky;
+}
+  
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  font-size: 20px;
+}
+
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navbar ul li ::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #F0D274;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover::after{
+  width: 100%;
+}
+
+.navbar ul li a:hover{
+  color: orange;
+  font-weight: bold;
+}
+    
+.about-section{
+  padding: 70px 0 30px 0;
+  text-align: center;
+  font-weight: bold;
+  font-family: Georgia;
+}
+
+.about-section h1{
+  font-size: 60px;
+  padding: 5px;
+  text-shadow: 5px 5px 6px black;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.contentText{
+  width:500px;
+  line-height: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  font-family: Arial;
+  text-align: justify;
+  margin-right: 25px;
+}
+
+.content img{
+  width: 400px;
+  border-radius: 25px;
+  opacity: 0.75;
+  border: 3px ridge white;
+}
+
+.content img:hover{
+  opacity: 1;
+  border: 3px solid #000;
+  border-radius: 50px;
+  box-shadow: 5px 5px 6px 3px #609998;
+}
+
+.main{
+  text-align: center;
+}
+
+.content ,.contentText{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+h1{
+  font-size: 30px;
+  font-family: Cambria;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-style: oblique;
+  color:aqua;
+  text-shadow: 5px 5px 6px green;
+}
